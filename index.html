@@ -20,8 +20,8 @@
     nav { display:flex; gap:24px; flex-wrap:wrap; }
     nav a { font-size:.92rem; color:var(--muted); }
     nav a:hover,nav a:focus-visible { color:white; }
-    .hero { text-align:center; padding:18px 0 56px; background:radial-gradient(ellipse at 50% 36%, #0c3560 0%, #081b30 37%, var(--bg) 74%); }
-    .hero-logo { display:block; width:min(1080px,100%); height:380px; margin:0 auto 12px; object-fit:fill; border-radius:12px; }
+    .hero { text-align:center; padding:14px 0 48px; background:radial-gradient(ellipse at 50% 36%, #0c3560 0%, #081b30 37%, var(--bg) 74%); }
+    .hero-logo { display:block; width:100%; height:clamp(210px,31vw,360px); margin:0 auto 12px; object-fit:fill; border-radius:12px; }
     .hero h1 { font-size:clamp(1.7rem,3.6vw,2.7rem); margin:5px auto 14px; max-width:760px; line-height:1.2; }
     .hero p { color:var(--muted); max-width:640px; margin:0 auto 25px; font-size:1.08rem; }
     .actions { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
@@ -45,7 +45,7 @@
     .center .lead { margin:0 auto 24px; }
     footer { padding:26px 0; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
     .foot { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
-    @media(max-width:720px) { .nav { flex-direction:column; justify-content:center; padding:14px 0; gap:8px; } nav { gap:16px; justify-content:center; } .hero { padding:14px 0 42px; } .hero-logo { height:clamp(175px,40vw,260px); } section { padding:52px 0; } .cards { grid-template-columns:1fr; } .feature { flex-direction:column; align-items:stretch; } .placeholder { min-width:0; } }
+    @media(max-width:720px) { .nav { flex-direction:column; justify-content:center; padding:14px 0; gap:8px; } nav { gap:16px; justify-content:center; } .hero { padding:14px 0 42px; } .hero-logo { height:clamp(150px,38vw,240px); } section { padding:52px 0; } .cards { grid-template-columns:1fr; } .feature { flex-direction:column; align-items:stretch; } .placeholder { min-width:0; } }
     @media(prefers-reduced-motion:reduce) { html {scroll-behavior:auto;} }
   </style>
 </head>
@@ -63,7 +63,7 @@
   <main>
     <div class="hero" id="home">
       <div class="wrap">
-        <img class="hero-logo" src="Glossy%20VP%20Perspective%20Logo%20with%20Tagline.png" alt="The VP Perspective logo with microphone and the tagline One World. Many Possibilities. A Different Perspective.">
+        <img class="hero-logo" src="vp-perspective-header-banner.png" alt="The VP Perspective logo with microphone and the tagline One World. Many Possibilities. A Different Perspective.">
         <h1>What if one new perspective could change everything?</h1>
         <p>Thought-provoking conversations, fresh ideas, and meaningful questions that open the door to new possibilities.</p>
         <div class="actions">
