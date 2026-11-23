@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060d18">
+  <meta name="description" content="The VP Perspective explores meaningful questions, fresh ideas, and new possibilities through a different perspective.">
+  <title>The VP Perspective | One World. Many Possibilities.</title>
+  <style>
+    :root { --bg:#060d18; --panel:#101d30; --line:#223a56; --text:#f5f9ff; --muted:#b8c7d9; --blue:#24a9ff; --blue2:#0876d7; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:Arial,Helvetica,sans-serif; line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    .wrap { width:min(1100px, calc(100% - 40px)); margin:auto; }
+    .site-header { position:sticky; top:0; z-index:20; background:rgba(6,13,24,.94); border-bottom:1px solid var(--line); backdrop-filter:blur(12px); }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:68px; }
+    .brand { font-weight:800; font-size:1.03rem; letter-spacing:.02em; }
+    .brand span { color:var(--blue); }
+    nav { display:flex; gap:24px; flex-wrap:wrap; }
+    nav a { font-size:.92rem; color:var(--muted); }
+    nav a:hover,nav a:focus-visible { color:white; }
+    .hero { text-align:center; padding:36px 0 76px; background:radial-gradient(ellipse at 50% 36%, #0c3560 0%, #081b30 37%, var(--bg) 74%); }
+    .hero-logo { display:block; width:min(780px,100%); margin:0 auto 0; height:auto; border-radius:12px; }
+    .hero h1 { font-size:clamp(1.7rem,3.6vw,2.7rem); margin:5px auto 14px; max-width:760px; line-height:1.2; }
+    .hero p { color:var(--muted); max-width:640px; margin:0 auto 25px; font-size:1.08rem; }
+    .actions { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
+    .btn { display:inline-block; padding:12px 24px; border:1px solid var(--blue); border-radius:8px; font-weight:700; }
+    .btn-primary { background:linear-gradient(115deg,var(--blue2),var(--blue)); border-color:transparent; color:#fff; }
+    .btn:hover { filter:brightness(1.15); }
+    section { padding:70px 0; }
+    .section-alt { background:#0b1524; border-block:1px solid #14253a; }
+    .eyebrow { color:var(--blue); font-size:.82rem; font-weight:800; letter-spacing:.15em; text-transform:uppercase; }
+    h2 { font-size:clamp(1.65rem,3vw,2.3rem); line-height:1.2; margin:12px 0 18px; }
+    .lead { max-width:800px; color:var(--muted); font-size:1.08rem; }
+    .cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:30px; }
+    .card { padding:28px; border:1px solid var(--line); background:linear-gradient(145deg,#14253a,#0b1728); border-radius:14px; }
+    .card .number { color:var(--blue); font-weight:800; font-size:.8rem; letter-spacing:.1em; }
+    .card h3 { margin:12px 0 8px; font-size:1.2rem; }
+    .card p { color:var(--muted); margin:0; }
+    .feature { display:flex; align-items:center; justify-content:space-between; gap:30px; padding:28px; background:var(--panel); border:1px solid var(--line); border-radius:14px; }
+    .feature p { color:var(--muted); margin-bottom:0; }
+    .placeholder { min-width:220px; min-height:140px; display:grid; place-items:center; border-radius:10px; border:1px dashed #4277a8; color:#86bfe6; text-align:center; padding:20px; background:#0a1b30; }
+    .center { text-align:center; }
+    .center .lead { margin:0 auto 24px; }
+    footer { padding:26px 0; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; }
+    .foot { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+    @media(max-width:720px) { .nav { flex-direction:column; justify-content:center; padding:14px 0; gap:8px; } nav { gap:16px; justify-content:center; } .hero { padding:18px 0 58px; } section { padding:52px 0; } .cards { grid-template-columns:1fr; } .feature { flex-direction:column; align-items:stretch; } .placeholder { min-width:0; } }
+    @media(prefers-reduced-motion:reduce) { html {scroll-behavior:auto;} }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#home">THE <span>VP</span> PERSPECTIVE</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#topics">Topics</a>
+        <a href="#episodes">Episodes</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="hero" id="home">
+      <div class="wrap">
+        <img class="hero-logo" src="vp-perspective-logo.png" alt="The VP Perspective logo with microphone and the tagline One World. Many Possibilities. A Different Perspective.">
+        <h1>What if one new perspective could change everything?</h1>
+        <p>Thought-provoking conversations, fresh ideas, and meaningful questions that open the door to new possibilities.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#episodes">Explore Episodes</a>
+          <a class="btn" href="#about">Our Purpose</a>
+        </div>
+      </div>
+    </div>
+    <section id="about">
+      <div class="wrap">
+        <span class="eyebrow">Our Purpose</span>
+        <h2>Look beyond the obvious.</h2>
+        <p class="lead">Life is filled with questions, choices, and opportunities. The VP Perspective explores the ideas that shape how we think, the decisions we make, and the possibilities we may have overlooked. The goal is simple: encourage curiosity, challenge assumptions, and help people see familiar situations in a new light.</p>
+      </div>
+    </section>
+    <section class="section-alt" id="topics">
+      <div class="wrap">
+        <span class="eyebrow">What We Explore</span>
+        <h2>Conversations that make you think.</h2>
+        <div class="cards">
+          <article class="card"><div class="number">01 / MINDSET</div><h3>Life &amp; Decisions</h3><p>Explore everyday choices, personal growth, and the questions that lead to fresh insight.</p></article>
+          <article class="card"><div class="number">02 / PERSPECTIVE</div><h3>Ideas &amp; Possibilities</h3><p>Discover different ways to look at opportunities, challenges, and the world around us.</p></article>
+          <article class="card"><div class="number">03 / DISCOVERY</div><h3>People &amp; Perspectives</h3><p>Consider viewpoints and experiences that spark curiosity and meaningful conversation.</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="episodes">
+      <div class="wrap">
+        <span class="eyebrow">Featured Content</span>
+        <h2>New perspectives start here.</h2>
+        <div class="feature">
+          <div>
+            <h3>Featured Video or Podcast</h3>
+            <p>This area is ready for your first YouTube video, podcast episode, or introductory message. We can add the video player and channel links once you're ready.</p>
+          </div>
+          <div class="placeholder" aria-label="Placeholder for future featured video">Your featured video<br>will appear here</div>
+        </div>
+      </div>
+    </section>
+    <section class="section-alt center">
+      <div class="wrap">
+        <span class="eyebrow">Stay Curious</span>
+        <h2>One world. Many possibilities.</h2>
+        <p class="lead">Sometimes, all it takes is one question or a different point of view to discover something extraordinary.</p>
+        <a class="btn btn-primary" href="#home">Back to Top</a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap foot"><span>© <span id="year">2026</span> The VP Perspective. All rights reserved.</span><span>One World. Many Possibilities. A Different Perspective.</span></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
